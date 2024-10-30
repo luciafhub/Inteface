@@ -9,22 +9,21 @@ import altair as alt
 def cargar_datos(nombre_archivo):
     return pd.read_csv(nombre_archivo)
 
-
 # Cargar cada tabla
-enfermeras = cargar_datos("enfermeras_1k.csv")
-pacientes = cargar_datos("pacientes_1k.csv")
-alertas = cargar_datos("alertas_1k.csv")
-centros = cargar_datos("centros_100.csv")
-intervenciones = cargar_datos("intervenciones_1k.csv")
-medidas = cargar_datos("medidas_1k.csv")
-pacientes_enfermeras = cargar_datos("pacientes_enfermeras_1k.csv")
-registro_login = cargar_datos("registro_login_1k.csv")
-sensores = cargar_datos("sensores_500.csv")
-sesiones = cargar_datos("sesiones_1k.csv")
-tipo_sensor = cargar_datos("tipo_sensor.csv")
+enfermeras = cargar_datos("bbdd/enfermeras_1k.csv")
+pacientes = cargar_datos("bbdd/pacientes_1k.csv")
+alertas = cargar_datos("bbdd/alertas_1k.csv")
+centros = cargar_datos("bbdd/centros_100.csv")
+intervenciones = cargar_datos("bbdd/intervenciones_1k.csv")
+medidas = cargar_datos("bbdd/medidas_1k.csv")
+pacientes_enfermeras = cargar_datos("bbdd/pacientes_enfermeras_1k.csv")
+registro_login = cargar_datos("bbdd/registro_login_1k.csv")
+sensores = cargar_datos("bbdd/sensores_500.csv")
+sesiones = cargar_datos("bbdd/sesiones_1k.csv")
+tipo_sensor = cargar_datos("bbdd/tipo_sensor.csv")
 
 # Título de la aplicación
-st.title("Análisis de Datos de Salud")
+st.title("Análisis de Datos de Salud - Cubolab")
 
 # Menú de selección de tabla
 tabla_seleccionada = st.selectbox("Selecciona la tabla para analizar:", 
