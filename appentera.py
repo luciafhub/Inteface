@@ -2,10 +2,12 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
+"""
+# Como vamos a usar Streamlit Cloud, ngrok no hace falta
 from pyngrok import ngrok
 public_url = ngrok.connect(8501)
 print("URL pública:", public_url)
-
+"""
 
 # Cargar los archivos CSV con los datos ficticios
 @st.cache_data
